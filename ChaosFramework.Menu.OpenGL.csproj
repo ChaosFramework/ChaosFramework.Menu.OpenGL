@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Project Metadata -->
+  <PropertyGroup>
+    <AssemblyName>ChaosFramework.Menu.OpenGL</AssemblyName>
+    <RootNamespace>ChaosFramework.Menu.OpenGl</RootNamespace>
+    <ProjectGuid>{4BF93AFB-B57C-477B-9332-69306EECAA79}</ProjectGuid>
+  </PropertyGroup>
+
+  <!-- Properties -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Properties/Common.targets" />
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Properties/OutputType/Library.targets" />
+
+  <!-- Configurations -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Configurations.targets" />
+
+  <!-- Included Files -->
+  <ItemGroup>
+    <Compile Include="source/**/*.cs" />
+  </ItemGroup>
+
+  <!-- References -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/ProjectReferences/ChaosFramework.Collections.targets" />
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/ProjectReferences/ChaosFramework.Graphics.OpenGL.targets" />
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/ProjectReferences/ChaosFramework.IO.targets" />
+
+  <!-- Analyzers -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/Analyzers/ChaosAnalyzers.CleanCode.targets" />
+
+  <!-- Build Tasks -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/BuildTasks/ChaosBuild.CodeFormatter.Tasks.ChangedProjectFiles.targets" />
+
+</Project>
