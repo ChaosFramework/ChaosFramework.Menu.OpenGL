@@ -1,0 +1,38 @@
+﻿<Root>
+    <DefineMacro id="HeaderLine">
+        <Code>
+            <Layout.Grid columns="2" Grid.index="0,0" Grid.margin="0" margin="0">
+                <Column index="0" width="0.15"/>
+                <Column index="1" width="*"/>
+
+                <Layout.FlowPanel direction="ltr" align="Center" Grid.index="0,0">
+                    <Button id="Expander_Expand" size="0.05"/>
+                </Layout.FlowPanel>
+                <Layout.Box id="Expander_Header" Grid.index="1,0"/>
+            </Layout.Grid>
+        </Code>
+    </DefineMacro>
+
+    <Expander_Expanded>
+        <Frame/>
+        <Layout.Grid rows="3">
+            <Row index="0" height="0.15"/>
+            <Row index="1" height="0.01"/>
+            <Row index="2" height="*"/>
+
+            <Macro id="HeaderLine"/>
+
+            <Frame Grid.index="0,2"/>
+            <Layout.Box id="Expander_Content" Grid.index="0,2"/>
+
+        </Layout.Grid>
+    </Expander_Expanded>
+
+    <Expander_Collapsed>
+        <Frame/>
+        <Layout.Grid rows="1">
+            <Row index="0" height="0.15"/>
+            <Macro id="HeaderLine"/>
+        </Layout.Grid>
+    </Expander_Collapsed>
+</Root>
