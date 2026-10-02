@@ -81,7 +81,7 @@ namespace ChaosFramework.Menu.OpenGl
                 : throw new KeyNotFoundException(source);
 
         public virtual bool TryLoad(string source, out Tex texture, Disposable monitor1, params Disposable[] monitors)
-            => @override.TryLoad(source, out texture, monitor1, monitors)
+            => @override?.TryLoad(source, out texture, monitor1, monitors) == true
             || @default.TryLoad(source, out texture, monitor1, monitors);
 
         protected override void DoDispose()
