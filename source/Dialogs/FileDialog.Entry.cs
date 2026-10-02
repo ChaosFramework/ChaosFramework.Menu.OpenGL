@@ -121,8 +121,11 @@ namespace ChaosFramework.Menu.OpenGl.Dialogs
 
                     if (dlg.getThumbnail != null)
                         thumbnail = dlg.getThumbnail(internalPath);
-                    // TODO: implement thumbnails from file system in a platform agnostic way if thumbnail == null
-
+#if OS_WINDOWS
+                    // TODO: implement thumbnails in a platform agnostic way
+                    if (thumbnail == null)
+                        thumbnail = ((FileDialog)parent.scene).GetWindowsThumbnail(internalPath);
+#endif
                     img.texture = thumbnail;
                 }
             }
