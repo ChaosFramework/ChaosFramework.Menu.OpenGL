@@ -71,9 +71,9 @@ namespace ChaosFramework.Menu.OpenGl.Dialogs
                     {
                         target = ChaosUtil.Platform.Windows.FileSystem.GetShortcutTargetFile(internalPath);
                         if (File.Exists(target))
-                            isFile = EntryType.FileLink;
+                            type = EntryType.FileLink;
                         else if (Directory.Exists(target))
-                            isFile = EntryType.DirectoryLink;
+                            type = EntryType.DirectoryLink;
                     }
 #endif
                     else
@@ -98,7 +98,7 @@ namespace ChaosFramework.Menu.OpenGl.Dialogs
                 label.doubleClickLeft += DoubleClick;
                 img.doubleClickLeft += DoubleClick;
 #if OS_WINDOWS
-                hasAccess = FileSystem.HasAccess(text);
+                hasAccess = ChaosUtil.Platform.Paths.FileSystem.HasAccess(text);
 #endif
             }
 
@@ -121,15 +121,8 @@ namespace ChaosFramework.Menu.OpenGl.Dialogs
 
                     if (dlg.getThumbnail != null)
                         thumbnail = dlg.getThumbnail(internalPath);
-#if OS_WINDOWS
-                    // TODO: implement thumbnails in a platform agnostic way
-                    if (thumbnail == null)
-                        using (var bm = WindowsThumbnailProvider.GetThumbnail(internalPath, 32, 32, ThumbnailOptions.ResizeToFit))
-                        {
-                            Texture tex = Texture.FromBitmap(scene.context.graphics.dispatcher, bm, 1);
-                            thumbnail = TextureContainer.Entry.Mock((_, __) => tex, _ => { });
-                        }
-#endif
+                    // TODO: implement thumbnails from file system in a platform agnostic way if thumbnail == null
+
                     img.texture = thumbnail;
                 }
             }

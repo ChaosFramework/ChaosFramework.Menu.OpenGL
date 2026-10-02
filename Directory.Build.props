@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Paths/Output/Common.targets" />
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
   </PropertyGroup>
 
-  <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Paths/Output/Common.targets" />
 </Project>
