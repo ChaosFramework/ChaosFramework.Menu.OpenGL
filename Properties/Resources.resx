@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FX_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX_Button.fx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FX_ColorDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX_ColorDialog.fx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FX_Darken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX_Darken.fx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FX_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX_Frame.fx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FX_Grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX_Grid.fx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Layout_ColorDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout_ColorDialog.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Layout_Expander" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout_Expander.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Layout_SettingsGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout_SettingsGrid.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Layout_SpecialExpander" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout_SpecialExpander.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Tex_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_Button.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_ButtonDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_ButtonDark.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_ColorSliderButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_ColorSliderButton.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_Cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_Cursor.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_Dialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_Dialog.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_DialogDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_DialogDark.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_ExpanderButtonCollapsed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_ExpanderButtonCollapsed.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_ExpanderButtonExpanded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_ExpanderButtonExpanded.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_Frame.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_GridCell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_GridCell.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_NumericActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_NumericActive.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_Slider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_Slider.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_SliderButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_SliderButton.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_TabPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_TabPage.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_TabPageButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_TabPageButton.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tex_TabPageButtonActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tex_TabPageButtonActive.png;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

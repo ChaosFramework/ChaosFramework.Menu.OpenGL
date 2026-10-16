@@ -1,0 +1,18 @@
+﻿<Root>
+    <Templates>
+        <Name  Grid.index="0,0" Grid.align="Left" size="0.05" textAlign="Left"/>
+        <Value Grid.index="1,0" Grid.align="Left" size="0.05"/>
+        <Descr Grid.index="2,0" Grid.align="Left" size="0.05" textAlign="Left"/>
+        <Grid id="settingsGrid" rows="0" columns="3" scroll="scrollSettings" margin="666">
+            <Layout.GridCellVisualizer color1="0.6,0.6,0.6,1" color2="0.8,0.8,0.8,1" mode="Rows"/>
+            <Column index="0" width="0.666"/>
+            <Column index="1" width="0.666"/>
+            <Column index="2" width="0.666"/>
+            <Row index="-1" height="0.666"/>
+        </Grid>
+    </Templates>
+
+    <SettingsGrid>
+        <Layout.Grid id="settingsGrid"/>
+    </SettingsGrid>
+</Root>
